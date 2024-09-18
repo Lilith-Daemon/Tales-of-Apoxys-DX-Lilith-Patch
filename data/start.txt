@@ -1,0 +1,64 @@
+# Copyright (c) 2015 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+start "LD Tale of Apoxys DX"
+	name "Tale of Apoxys DX Lilith Patch"
+	description `Have you ever wanted to turn Endless Sky into an RPG with all the fix-ins? Have you ever wanted to truly be able to use one ship from beginning to end? Well, now you can.`
+	description `	Take control of the Apoxys and spend a life together with a beautiful woman in red and black.`
+	thumbnail "scene/lobby"
+	date 16 11 3013
+	system "Rutilicus"
+	planet "New Boston"
+	conversation "ld_apoxys_path_select"
+	account
+		credits 200000
+		score 400
+		mortgage Mortgage
+			principal 600000
+			interest 0.002
+			term 365
+	set "license: Pilot's"
+	"apoxys spec points" = 5
+
+conversation "ld_apoxys_path_select"
+    `Welcome to Lilith's Patch of Tales Of Apoxys DX.`
+    `There are multiple paths your tale can take, what would you like to choose?`
+    label selection
+    choice
+        `   Default: The Original Tales Of Apoxys experience`
+            goto default
+        `   Humanity: Human description`
+            goto human
+        `   Korath: Korath description`
+            goto korath
+
+    label default
+        action
+            give ship "Apoxys"
+            "next_ship_level" = 100
+            "ld_apoxys_path" = "default"
+        conversation "toa intro"
+
+    label human
+        action
+            give ship "Apoxys Human I"
+            "next_ship_level" = 20
+            "ld_apoxys_path" = "human"
+
+        conversation "toa intro"
+
+    label korath
+        action
+            give ship "Apoxys Korath I"
+            "next_ship_level" = 20
+            "ld_apoxys_path" = "korath"
+        conversation "toa intro"
+
+

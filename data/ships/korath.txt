@@ -1,0 +1,56 @@
+ship "Korath Scouter"
+	sprite "ship/Midnight PR4987 ravager"
+	thumbnail "thumbnail/PR4987 ravager"
+	attributes
+		category "Medium Warship"
+		"cost" 8285000
+		"shields" 3000
+		"hull" 2000
+		"required crew" 20
+		"bunks" 25
+		"mass" 540
+		"drag" 12
+		"heat dissipation" .33
+		"fuel capacity" 600
+		"cargo space" 45
+		"outfit space" 275
+		"weapon capacity" 50
+		"engine capacity" 50
+		weapon
+			"blast radius" 125
+			"shield damage" 1800
+			"hull damage" 900
+			"hit force" 2700
+	outfits
+		"Beam Laser" 2
+
+		"Blaster Turret"
+		"Anti-Missile Turret"
+
+		"S3 Thermionic"
+		"LP072a Battery Pack"
+		"D67-TM Shield Generator"
+		"Water Coolant System"
+
+		"Impala Plasma Steering"
+		"Greyhound Plasma Thruster"
+		"Volcano Afterburner"
+		"Hyperdrive"
+
+		"Apoxys Core DX"
+	engine -13 31
+	engine 13 31
+	gun -15 -71 "Beam Laser"
+	gun -15 -71
+	gun 15 -71 "Beam Laser"
+	gun 15 -71
+	turret -23 -42 "Blaster Turret"
+	turret 23 -42
+	turret -74 11
+	turret 74 11 "Anti-Missile Turret"
+	bay "Fighter" 0 0
+	explode "small explosion" 20
+	explode "medium explosion" 25
+	explode "large explosion" 20
+	"final explode" "final explosion large"
+	description "The Apoxys is a large warship of unknown origin, quite weak by most standards, but with the curious ability to grow and evolve as it experiences the galaxy. The ship is helmed not only by a human crew, but a powerful AI, known only as Maribelle; it's believed that, at one point, the Apoxys was a completely autonomous war machine, but for one reason or another, it has since been turned into a human-crewed vessel."
