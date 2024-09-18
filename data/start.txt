@@ -8,8 +8,8 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-start "LD Tale of Apoxys DX"
-	name "Tale of Apoxys DX Lilith Patch"
+start "Tale of Apoxys DX"
+	name "Tale of Apoxys DX"
 	description `Have you ever wanted to turn Endless Sky into an RPG with all the fix-ins? Have you ever wanted to truly be able to use one ship from beginning to end? Well, now you can.`
 	description `	Take control of the Apoxys and spend a life together with a beautiful woman in red and black.`
 	thumbnail "scene/lobby"
